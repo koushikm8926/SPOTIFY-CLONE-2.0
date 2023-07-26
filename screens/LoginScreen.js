@@ -9,6 +9,9 @@ import {
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { Entypo } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
+import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 const LoginScreen = () => {
   return (
@@ -44,11 +47,77 @@ const LoginScreen = () => {
             width: 300,
             alignItems: "center",
             justifyContent: "center",
-            borderRadius:25,
+            borderRadius: 25, marginVertical:10,
           }}
         >
           <Text>Sign In With Spotify</Text>
         </Pressable>
+
+        <Pressable
+          style={{
+            backgroundColor: "#131624",
+            padding: 10,
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: 300,
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 25,
+            flexDirection:'row',
+            alignItems:'center',
+            marginVertical:10,
+            borderColor:"#C0C0C0",
+            borderWidth:0.8
+          }}
+        >
+         <MaterialIcons name="phone-android" size={24} color="white" />
+          <Text style={{color:'white', fontWeight:'500', textAlign:'center', flex:1,}}>Continue with phone number </Text>
+        </Pressable>
+
+        <Pressable
+          style={{
+            backgroundColor: "#131624",
+            padding: 10,
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: 300,
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 25,
+            flexDirection:'row',
+            alignItems:'center',
+            marginVertical:10,
+            borderColor:"#C0C0C0",
+            borderWidth:0.8
+          }}
+        >
+          <AntDesign name="google" size={24} color="red" />
+          <Text style={{color:'white', fontWeight:'500', textAlign:'center', flex:1,}}>Continue with Google </Text>
+        </Pressable>
+
+        <Pressable
+          style={{
+            backgroundColor: "#131624",
+            padding: 10,
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: 300,
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 25,
+            flexDirection:'row',
+            alignItems:'center',
+            marginVertical:10,
+            borderColor:"#C0C0C0",
+            borderWidth:0.8
+          }}
+        >
+          <FontAwesome5 name="facebook" size={24} color="blue" />
+          <Text style={{color:'white', fontWeight:'500', textAlign:'center', flex:1,}}>Sign in With with Facebook</Text>
+        </Pressable>
+
+
+
       </SafeAreaView>
     </LinearGradient>
   );
