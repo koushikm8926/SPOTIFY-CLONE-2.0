@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, SafeAreaView, Platform } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Platform,
+  Pressable,
+} from "react-native";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { Entypo } from "@expo/vector-icons";
@@ -25,6 +32,23 @@ const LoginScreen = () => {
         >
           Millions of Songs Free on Spotify!{" "}
         </Text>
+
+        <View style={{ height: 80 }} />
+
+        <Pressable
+          style={{
+            backgroundColor: "#1DB954",
+            padding: 10,
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: 300,
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius:25,
+          }}
+        >
+          <Text>Sign In With Spotify</Text>
+        </Pressable>
       </SafeAreaView>
     </LinearGradient>
   );
